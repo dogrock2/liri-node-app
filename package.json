@@ -1,0 +1,8 @@
+{
+    "name": "liri-node-app",
+    "version": "0.0.1",
+    "description": "Siri like command line app",
+    "dependencies": {
+        "request": "2.83.0"
+    }
+}
