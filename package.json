@@ -3,6 +3,8 @@
     "version": "0.0.1",
     "description": "Siri like command line app",
     "dependencies": {
-        "request": "2.83.0"
+        "request": "2.83.0",
+        "twitter": "1.7.1",
+        "node-spotify-api": "1.0.7"
     }
 }
