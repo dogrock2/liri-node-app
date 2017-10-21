@@ -32,6 +32,7 @@ let callMovieApi = movieTitleInput => {
       let result = JSON.parse(body);
       let rottRating = '';
       addToLog(`\n${body}`);
+      addToLog(`\n**********************************`);
       for (let x in result.Ratings) {
         let source = result.Ratings[x].Source;
         if (source === 'Rotten Tomatoes') {
@@ -93,8 +94,9 @@ let twitterFunction = () => {
         console.log(`\nTweet: ${tweets[x].text}`);
         console.log(`Date: ${tweets[x].created_at}`);
         addToLog(`\nTweet: ${tweets[x].text} `);
-        addToLog(`Date: ${tweets[x].created_at}`);
+        addToLog(`Date: ${tweets[x].created_at}`);        
       }
+      addToLog(`\n**********************************`);
   });
 };
 
@@ -149,6 +151,7 @@ let spotifyApiCall = songName => {
     addToLog(`Title: ${title}`);
     addToLog(`Preview: ${preview}`);
     addToLog(`Album: ${album}`);
+    addToLog(`\n**********************************`);
 
   }).catch(function (err) {
     console.error(`Error: ${err}`);
